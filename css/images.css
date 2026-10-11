@@ -1,0 +1,96 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+.page {
+    width: 1366px;
+    height: 768px;
+    margin: 0 auto;
+    border: 1px solid black;
+}
+
+#topMenu{
+position: relative;
+height: 20px;
+}
+
+#buttonRight {
+    position: absolute;
+    left: 1%;
+}
+
+#centredMenu {
+    position: absolute;
+    left: 30%;
+}
+
+#buttonLeft {
+    position: absolute;
+    right: 2%;
+    top: 5px;
+}
+
+#chatIcon {
+    width: 14px;
+    height: 14px;
+     display: inline-block;
+     margin-top: 3px;
+
+}
+
+#chatArrow {
+    width: 15px;
+    height: 15px;
+     fill: #1f1f1f;
+    display: inline-block;
+    color: #545151;
+
+}
+#chatTitle{
+ display: inline-block;
+}
+
+.menuItem {
+    display: inline-block;
+    color: #545151;
+    padding: 10px;
+}
+
+#Login {
+border-radius: 12px;
+background-color: #1f1f1f;
+color: white;
+padding: 4px;
+border: #1f1f1f;
+}
+
+#Sighup {
+border-radius: 12px;
+background-color:white;
+color:  #1f1f1f;
+padding: 4px;
+border: 0.5px solid #6a6767;
+}
+#iconQ {
+background-color:white;
+color:  white;
+    padding: 4px;
+    border: 0px solid white;
+}
+
+main {
+    position: relative;
+    width: 100%;
+    height: 80%;
+    left: 30%;
+}
+
+h3 {
+
+}
+
+h6 {
+
+}
