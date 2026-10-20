@@ -1,24 +1,46 @@
+@import url('https://fonts.googleapis.com/css2?family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap');
+
 * {
     box-sizing: border-box;
     margin: 0;
     padding: 0;
+    color: var(--black);
+}
+
+:root {
+    --black: #0D0D0D;
+    /* Text and dark buttons:*/
+    --Dark-gray: #5D5D5D;
+    /* text (menu, button labels) */
+    --gray: #6E6E6E;
+    /* Secondary text */
+    --gray2: #8F8F8F;
+    /* Placeholder and captions */
+    --white-gray: #EAEAEA;
+    /* Light borders */
+    --button-background: #ECECEC;
+    /* Light button background */
+    --background: #FFFFFF
+        /* Page background */
 }
 
 .page {
     width: 1366px;
     height: 768px;
     margin: 0 auto;
-    border: 1px solid black;
+    border: 1px solid var(--black);
+    background-color: var(--background);
 }
 
-#topMenu{
-position: relative;
-height: 20px;
+#topMenu {
+    position: relative;
+    height: 20px;
 }
 
 #buttonRight {
     position: absolute;
-    left: 1%;
+    left: 2%;
+    margin-top: 5px;
 }
 
 #centredMenu {
@@ -28,57 +50,62 @@ height: 20px;
 
 #buttonLeft {
     position: absolute;
-    right: 2%;
-    top: 5px;
+    top: 2px;
+    left: 86%;
 }
 
 #chatIcon {
+    position: absolute;
     width: 14px;
     height: 14px;
-     display: inline-block;
-     margin-top: 3px;
+    margin: 7px;
+}
 
+#chatTitle {
+    display: inline-block;
 }
 
 #chatArrow {
-    width: 15px;
-    height: 15px;
-     viewBox: 0 -960 960 960;
-     fill: #1f1f1f;
+    width: 7px;
+    height: 7px;
+    font-size: small;
     display: inline-block;
-    color: #545151;
+    color: var(--Dark-gray);
+}
 
-}
-#chatTitle{
- display: inline-block;
-}
 
 .menuItem {
     display: inline-block;
-    color: #545151;
+    color: var(--Dark-gray);
     padding: 10px;
+    text-decoration: none;
 }
 
 #Login {
-border-radius: 12px;
-background-color: #1f1f1f;
-color: white;
-padding: 4px;
-border: #1f1f1f;
+    border-radius: 12px;
+    background-color: var(--black);
+    color: white;
+    padding: 4px;
+    border: 1px solid var(--white-gray);
 }
 
 #Sighup {
-border-radius: 12px;
-background-color:white;
-color:  #1f1f1f;
-padding: 4px;
-border: 0.5px solid #6a6767;
-}
-#iconQ {
-background-color:white;
-color:  white;
+    border-radius: 12px;
+    background-color: white;
     padding: 4px;
+    border: 1px solid var(--white-gray);
+}
+
+#iconQ {
+    background-color: white;
+    color: white;
     border: 0px solid white;
+    height: 16px;
+    width: 16px;
+    fill: #1f1f1f;
+    margin-top: 7px;
+    position: absolute;
+    left: 98%;
 }
 
 
@@ -89,13 +116,18 @@ main {
     top: 40%;
     left: 30%;
 }
+
 h1 {
- color: #746f6f;
-margin-left: 5%;
+    margin-left: 8%;
+    margin-bottom: 2%;
+    font-size: x-large;
+    font-family: "Work Sans", sans-serif;
+    font-weight: 450;
+    font-style: normal;
 }
 
 form {
-    border: 1px solid black;
+    border: 0.5px solid var(--white-gray);
     position: absolute;
     border-radius: 25px;
     padding-left: 350px;
@@ -104,59 +136,69 @@ form {
 }
 
 #ask {
-    border: 0;
+    border: none;
     position: relative;
     right: 340px;
     margin-bottom: 20px;
+    color: var(--gray2);
 }
 
 #bRight {
     position: absolute;
-    left: 1%;
+    left: 2%;
     bottom: 5px;
 }
 
 #bLeft {
     position: absolute;
-    right: 1%;
+    right: 2%;
     bottom: 5px;
 }
 
 .b {
     padding-top: 30px;
-border-radius: 12px;
-background-color:white;
-color:  #1f1f1f;
-padding: 4px;
-border: 0.5px solid #878484;   
+    border-radius: 12px;
+    background-color: white;
+    color: var(--gray);
+    padding: 4px;
+    border: 0.5px solid var(--white-gray);
 }
 
 
 
 #v {
-    background-color:rgba(135, 131, 131, 0.53);
+    background-color: var(--button-background);
 }
- #aa {
+
+#aa {
     font-size: small;
     margin-right: 3px;
- }
-  #la {
+    color: var(--Dark-gray);
+}
+
+#la {
+    font-size: smaller;
+    margin-right: 3px;
+    color: var(--Dark-gray);
+
+}
+
+#ba {
+    font-size: smaller;
+    margin-right: 3px;
+    color: var(--Dark-gray);
+
+}
+
+#pa {
+    font-size: smaller;
+    margin-right: 3px;
+    color: var(--Dark-gray);
+
+}
+
+#va {
     font-size: smaller;
     margin-right: 3px;
 
- }
-  #ba {
-    font-size: smaller;
-    margin-right: 3px;
-
- }
-  #pa {
-    font-size: smaller;
-        margin-right: 3px;
-
- }
-  #va {
-    font-size: smaller;
-        margin-right: 3px;
-
- }
+}

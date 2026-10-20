@@ -4,93 +4,250 @@
     padding: 0;
 }
 
+:root {
+    --black: #0D0D0D;
+    /* Text and dark buttons:*/
+    --black-gray: #212020;
+    --Dark-gray: #5D5D5D;
+    /* text (menu, button labels) */
+    --gray: #6E6E6E;
+    /* Secondary text */
+    --gray2: #8F8F8F;
+    /* Placeholder and captions */
+    --white-gray: #EAEAEA;
+    /* Light borders */
+    --button-background: #ECECEC;
+    /* Light button background */
+    --background: #FFFFFF;
+    /* Page background */
+    --purple: #EFD1FA;
+    --orange: #FFE7D7;
+    --white: #FFFFFF;
+}
+
+html {
+    background-color: var(--white);
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
 .page {
+    box-sizing: border-box;
     width: 1366px;
     height: 768px;
     margin: 0 auto;
     border: 1px solid black;
+    background:
+        linear-gradient(to bottom, transparent 0%, var(--white) 70%, var(--white) 100%),
+        linear-gradient(to right, var(--purple) 0%, var(--orange) 100%);
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+
 }
 
-#topMenu{
-position: relative;
-height: 20px;
+
+#topMenu {
+    position: relative;
+    height: 20px;
 }
 
 #buttonRight {
     position: absolute;
-    left: 1%;
-}
-
-#centredMenu {
-    position: absolute;
-    left: 30%;
+    left: 2%;
+    margin-top: 5px;
 }
 
 #buttonLeft {
     position: absolute;
-    right: 2%;
-    top: 5px;
+    top: 2px;
+    left: 86%;
 }
 
 #chatIcon {
+    position: absolute;
     width: 14px;
     height: 14px;
-     display: inline-block;
-     margin-top: 3px;
+    margin: 7px;
+}
 
+#chatTitle {
+    display: inline-block;
 }
 
 #chatArrow {
-    width: 15px;
-    height: 15px;
-     fill: #1f1f1f;
+    width: 7px;
+    height: 7px;
+    font-size: small;
     display: inline-block;
-    color: #545151;
-
-}
-#chatTitle{
- display: inline-block;
+    color: var(--Dark-gray);
 }
 
-.menuItem {
-    display: inline-block;
-    color: #545151;
-    padding: 10px;
-}
 
 #Login {
-border-radius: 12px;
-background-color: #1f1f1f;
-color: white;
-padding: 4px;
-border: #1f1f1f;
+    border-radius: 12px;
+    background-color: var(--black);
+    color: white;
+    padding: 4px;
+    border: 1px solid var(--white-gray);
 }
 
 #Sighup {
-border-radius: 12px;
-background-color:white;
-color:  #1f1f1f;
-padding: 4px;
-border: 0.5px solid #6a6767;
-}
-#iconQ {
-background-color:white;
-color:  white;
+    border-radius: 12px;
+    background-color: white;
     padding: 4px;
+    border: 1px solid var(--white-gray);
+}
+
+#iconQ {
+    background-color: white;
+    color: white;
     border: 0px solid white;
+    height: 16px;
+    width: 16px;
+    fill: #1f1f1f;
+    margin-top: 7px;
+    position: absolute;
+    left: 98%;
+    border-radius: 50%;
 }
 
 main {
     position: relative;
-    width: 100%;
+    width: 42%;
     height: 80%;
-    left: 30%;
+    left: 32%;
+    top: 7%;
+    bottom: 20%;
 }
 
-h3 {
+h1 {
+    position: absolute;
+    top: 0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-weight: 500;
+    font-size: x-large;
+    color: var(--black-gray);
+}
+
+#topHeader {
+    position: absolute;
+    top: 13%;
+    width: 100%;
+}
+
+#bottonHeader {
+    position: absolute;
+    top: 50%;
+    width: 100%;
+}
+
+.leftb {
+    position: absolute;
+    right: 7%;
+    display: inline-block;
+    color: var(--black);
+    background-color: transparent;
+    border: 1px solid var(--gray2);
+    border-radius: 50%;
 
 }
 
-h6 {
+.rightb {
+    position: absolute;
+    right: 0;
+    display: inline-block;
+    color: var(--black);
+    background-color: var(--white);
+    border: 1px solid var(--gray2);
+    border-radius: 50%;
 
+}
+
+.leftb span {
+    margin-right: 3px;
+    margin-top: 2px;
+}
+
+.rightb span {
+    margin-left: 3px;
+    margin-top: 2px;
+}
+
+
+h2 {
+    display: inline;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-weight: 500;
+    font-size: medium;
+    color: var(--black-gray);
+
+}
+
+#big {
+    position: absolute;
+    top: 20%;
+    width: 100%;
+}
+
+.bigpic {
+    display: inline-block;
+    width: 16%;
+    height: 100%;
+}
+
+.bigpic img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 20%;
+}
+
+.bigpic figcaption {
+    color: var(--gray2);
+    font-weight: 50;
+    font-size: smaller;
+    margin-left: 18px;
+}
+
+figcaption {
+    color: var(--gray2);
+}
+
+#smallpic {
+    position: absolute;
+    top: 60%;
+    width: 45%;
+    left: 0;
+    display: block;
+    height: 100%;
+}
+
+#smallpicR2 {
+    position: absolute;
+    top: 60%;
+    width: 45%;
+    left: 50%;
+    display: block;
+}
+
+#smallpic img {
+    width: 20%;
+    height: 20%;
+    border-radius: 20%;
+    object-fit: contain;
+}
+
+#smallpicR2 img {
+    width: 20%;
+    height: 20%;
+    border-radius: 20%;
+    object-fit: contain;
+}
+
+.side {
+    display: inline;
+    bottom: 15px;
+    position: relative;
 }
